@@ -5,7 +5,8 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import DarkModeTwoToneIcon from "@mui/icons-material/DarkModeTwoTone";
 import { Typography, AppBar, Button, Toolbar } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-
+//import Signuppage from "./Signuppage";
+//import Checkout from "./Checkout";
 import InputBase from "@mui/material/InputBase";
 
 import { styled, alpha } from "@mui/material/styles";

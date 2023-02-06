@@ -4,9 +4,9 @@ import Furniture from "./Furniture";
 import Learning from "./Learning";
 import Toys from "./Toys";
 import Footer from "./Footer";
-//import Signuppage from "./Signuppage";
+
 import ButtonBases from "./ButtonBases";
-//import Checkout from "./Checkout";
+
 import SmartToyOutlinedIcon from "@mui/icons-material/SmartToyOutlined";
 import AbcOutlinedIcon from "@mui/icons-material/AbcOutlined";
 import DiamondOutlinedIcon from "@mui/icons-material/DiamondOutlined";

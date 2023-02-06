@@ -1,5 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
-import { pink, amber, cyan, yellow } from "material-ui-colors";
+import { pink, amber, cyan, yellow } from "@mui/material/colors";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -55,11 +55,13 @@ const useStyles = makeStyles((theme) => ({
   cardContent: {
     flexGrow: 1,
     textAlign: "center",
-    border: "4px green solid",
+
+    border: "2px green solid",
+    backgroundColor: amber[100],
+    paddingBottom: "5px",
   },
-  cardMedia: { paddingTop: "56.25%" },
+  theimage: { width: "350px", height: "250px" },
   productprice: {
-    padding: "1px 0",
     marginBottom: "1px",
     marginTop: "1px",
   },

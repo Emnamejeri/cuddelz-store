@@ -1,6 +1,6 @@
 import React from "react";
 import FavoriteTwoToneIcon from "@mui/icons-material/FavoriteTwoTone";
-import photos from "./photos";
+
 import EuroIcon from "@mui/icons-material/Euro";
 import {
   Typography,
@@ -9,156 +9,156 @@ import {
   ButtonGroup,
   Card,
   CardContent,
-  CardMedia,
   Container,
   Grid,
 } from "@material-ui/core";
 import useStyles from "./styles";
+
 const database = [
   {
     id: "3233",
     productName: "Red Dress",
     price: 50.99,
-    src: "./photos"
+    key: require("./photos/clothes1.jpg").default,
   },
   {
     id: "3435",
     productName: "Colors Pattern Dress",
     price: 64.99,
-    src: "src\photos\clothes2.jpg",
+    key: require("./photos/clothes2.jpg").default,
   },
 
   {
     id: "3637",
     productName: "Boy Blue Set",
     price: 87.99,
-    src: "src\photos\clothes7.jpg",
+    key: require("./photos/clothes7.jpg").default,
   },
   {
     id: "3839",
     productName: "Patterned T-Shirt Flannel",
     price: 24.55,
-    src: "src\photos\clothes20.jpg",
+    key: require("./photos/clothes8.jpg").default,
   },
   {
     id: "4041",
     productName: "Paw Patrol Set",
     price: 55.99,
-    src: "photos/clothes9.jpeg",
+    key: require("./photos/clothes9.jpg").default,
   },
   {
     id: "4243",
     productName: "Pinky New Born Set",
     price: 13.99,
-    src: "photos/clothes10.jpeg",
+    key: require("./photos/clothes15.jpg").default,
   },
   {
     id: "4445",
     productName: "White Cotton Dress",
     price: 29.99,
-    src: "photos/clothes3.jpeg",
+    key: require("./photos/clothes3.jpg").default,
   },
   {
     id: "4647",
     productName: "Dark blue Flannel",
     price: 32.99,
-    src: "photos/clothes16.jpeg",
+    key: require("./photos/clothes16.jpg").default,
   },
   {
     id: "4849",
     productName: "Aqua Girl Set",
     price: 56.99,
-    src: "photos/clothes11.jpeg",
+    key: require("./photos/clothes11.jpg").default,
   },
   {
     id: "5051",
     productName: "Pink Skirt ",
     price: 18.99,
-    src: "photos/clothes5.jpeg",
+    key: require("./photos/clothes5.jpg").default,
   },
   {
     id: "5253",
     productName: "Green Dinosaur Set",
     price: 60.99,
-    src: "photos/clothes17.jpeg",
+    key: require("./photos/clothes17.jpg").default,
   },
   {
     id: "5455",
     productName: "Beige Rain Coat",
     price: 74.99,
-    src: "photos/clothes4.jpeg",
+    key: require("./photos/clothes4.jpg").default,
   },
   {
     id: "5657",
     productName: "Baby Bath Cap",
     price: 20.99,
-    src: "photos/clothes22.jpeg",
+    key: require("./photos/clothes22.jpg").default,
   },
   {
     id: "5859",
     productName: "Cotton T-Shirt",
     price: 16.99,
-    src: "photos/clothes.jpeg",
+    key: require("./photos/clothes18.jpg").default,
   },
   {
     id: "6061",
     productName: "Disney Princess Dress",
     price: 37.99,
-    src: "photos/clothes.jpeg",
+    key: require("./photos/clothes14.jpg").default,
   },
   {
     id: "6263",
     productName: "White Cotton Flannel",
     price: 18.99,
-    src: "photos/clothes.jpeg",
+    key: require("./photos/clothes19.jpg").default,
   },
   {
     id: "6465",
     productName: "Boy Lego Set",
     price: 45.99,
-    src: "photos/clothes.jpeg",
+    key: require("./photos/clothes20.jpg").default,
   },
   {
     id: "6667",
     productName: "Cotton T-Shirt",
     price: 19.99,
-    src: "photos/clothes.jpeg",
+    key: require("./photos/clothes21.jpg").default,
   },
   {
     id: "6869",
     productName: "Polka Dot Bbay Shower Cap",
     price: 22.99,
-    src: "photos/clothes.jpeg",
+    key: require("./photos/clothes23.jpg").default,
   },
   {
     id: "7071",
     productName: "Pink Dress",
     price: 55.99,
-    src: "photos/clothes.jpeg",
+    key: require("./photos/clothes12.jpg").default,
   },
   {
     id: "7273",
     productName: "Cotton Flower Set",
     price: 30.99,
-    src: "photos/clothes.jpeg",
+    key: require("./photos/clothes10.jpg").default,
   },
   {
     id: "7475",
     productName: "Blue T-Shirt",
     price: 18.99,
-    src: "photos/clothes.jpeg",
+    key: require("./photos/clothes24.jpg").default,
   },
   {
     id: "7677",
     productName: "Green Girl Dress",
     price: 56.99,
-    src: "photos/clothes.jpeg",
+    key: require("./photos/clothes26.jpg").default,
   },
   {
     id: "7879",
     productName: "Grey Cotton Flannel",
     price: 25.99,
-    src: "photos/clothes.jpeg",
+    key: require("./photos/clothes25.jpg").default,
   },
 ];
 
@@ -175,12 +175,7 @@ function Clothes() {
                 <Card className={classes.card}>
                   {" "}
                   <CardContent className={classes.cardContent}>
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      image="../photos/book1.jpeg"
-                      alt="its a book"
-                    />
+                    <img src={card.key} className={classes.theimage} alt="" />{" "}
                     <Typography gutterBottom variant="h6">
                       {" "}
                       <h5 className={classes.producttitle}>
