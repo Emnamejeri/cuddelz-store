@@ -50,17 +50,17 @@ const useStyles = makeStyles((theme) => ({
   cardGrid: {
     padding: "20px 0",
     marginBottom: "5rem",
-    border: "4px red solid",
+
   },
   cardContent: {
     flexGrow: 1,
     textAlign: "center",
 
-    border: "2px green solid",
+    
     backgroundColor: amber[100],
     paddingBottom: "5px",
   },
-  theimage: { width: "350px", height: "250px" },
+  theimage: { width: "350px", height: "350px" },
   productprice: {
     marginBottom: "1px",
     marginTop: "1px",

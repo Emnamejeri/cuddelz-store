@@ -13,6 +13,7 @@ import {
 import FavoriteTwoToneIcon from "@mui/icons-material/FavoriteTwoTone";
 import EuroIcon from "@mui/icons-material/Euro";
 import useStyles from "./styles";
+
 const database = [
   {
     id: "1010",
@@ -102,7 +103,7 @@ const database = [
     id: "1024",
     productName: "Having A Friend",
     price: 8.99,
-    key: require("./photos/book15.jpeg").default,
+    key: require("./photos/book15.jpeg"),
   },
 ];
 function Learning() {
@@ -118,7 +119,7 @@ function Learning() {
                 <Card className={classes.card}>
                   {" "}
                   <CardContent className={classes.cardContent}>
-                    <img src={card.key} className={classes.theimage} alt="" />
+                    <img source={card.key} className={classes.theimage} alt="" />
                     <Typography gutterBottom variant="h6">
                       {" "}
                       <h5 className={classes.producttitle}>
