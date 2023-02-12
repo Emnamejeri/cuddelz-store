@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: amber[100],
     paddingBottom: "5px",
   },
-  theimage: { width: "350px", height: "350px" },
+  theimage: { width: "350px", height: "350px", zIndex:"5", },
   productprice: {
     marginBottom: "1px",
     marginTop: "1px",

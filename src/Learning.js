@@ -19,85 +19,85 @@ const database = [
     id: "1010",
     productName: "Fruits and Vegetables Book",
     price: 6.99,
-    key: require("./photos/book1.jpeg").default,
+    key: require("./photos/book1.jpeg"),
   },
   {
     id: "1011",
     productName: "Fun with Numbers and Shapes",
     price: 9.99,
-    key: require("./photos/book2.jpeg").default,
+    key: require("./photos/book2.jpeg"),
   },
   {
     id: "1012",
     productName: "Coloring Book ",
     price: 7.89,
-    key: require("./photos/book3.jpeg").default,
+    key: require("./photos/book3.jpeg"),
   },
   {
     id: "1013",
     productName: "Toddler Coloring Book",
     price: 7.89,
-    key: require("./photos/book4.jpeg").default,
+    key: require("./photos/book4.jpeg"),
   },
   {
     id: "1014",
     productName: "Easy Coloring Book",
     price: 7.89,
-    key: require("./photos/book5.jpeg").default,
+    key: require("./photos/book5.jpeg"),
   },
   {
     id: "1015",
     productName: "Rescue at Lake Wild Book",
     price: 9.99,
-    key: require("./photos/book6.png").default,
+    key: require("./photos/book6.png"),
   },
   {
     id: "1016",
     productName: "Charlotte's Web",
     price: 10.99,
-    key: require("./photos/book7.jpeg").default,
+    key: require("./photos/book7.jpeg"),
   },
   {
     id: "1017",
     productName: "My Quiet Imagination",
     price: 8.99,
-    key: require("./photos/book8.jpeg").default,
+    key: require("./photos/book8.jpeg"),
   },
   {
     id: "1018",
     productName: "The Voyage to Magical North",
     price: 13.99,
-    key: require("./photos/book9.jpeg").default,
+    key: require("./photos/book9.jpeg"),
   },
   {
     id: "1019",
     productName: "Peter Pan",
     price: 10.99,
-    key: require("./photos/book10.png").default,
+    key: require("./photos/book10.png"),
   },
   {
     id: "1020",
     productName: "Skycircus",
     price: 5.89,
-    key: require("./photos/book11.jpeg").default,
+    key: require("./photos/book11.jpeg"),
   },
   {
     id: "1021",
     productName: "Susie Won't Back Down",
     price: 16.99,
-    key: require("./photos/book12.jpeg").default,
+    key: require("./photos/book12.jpeg"),
   },
   {
     id: "1022",
     productName: "Red Riding Hood",
     price: 9.99,
-    key: require("./photos/book13.jpeg").default,
+    key: require("./photos/book13.jpeg"),
   },
   {
     id: "1023",
     productName: "Alphabet Book",
     price: 13.89,
-    key: require("./photos/book14.jpeg").default,
+    key: require("./photos/book14.jpeg"),
   },
   {
     id: "1024",
@@ -110,7 +110,7 @@ function Learning() {
   const classes = useStyles();
   return (
     <div>
-      <CssBaseline />{" "}
+       <CssBaseline />{" "}
       <Container className={classes.cardGrid}>
         <Grid container spacing={2}>
           {database.map((card) => {
@@ -119,7 +119,7 @@ function Learning() {
                 <Card className={classes.card}>
                   {" "}
                   <CardContent className={classes.cardContent}>
-                    <img source={card.key} className={classes.theimage} alt="" />
+                    <img src={card.key} className={classes.theimage} alt="" />
                     <Typography gutterBottom variant="h6">
                       {" "}
                       <h5 className={classes.producttitle}>
