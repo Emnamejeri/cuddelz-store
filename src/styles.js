@@ -56,9 +56,8 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     textAlign: "center",
 
-    
-    backgroundColor: amber[100],
-    paddingBottom: "5px",
+    backgroundColor: cyan[100],
+    paddingBottom: "5px",  "&:hover": { backgroundColor: pink[100] }
   },
   theimage: { width: "350px", height: "350px", zIndex:"5", },
   productprice: {
